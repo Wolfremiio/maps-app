@@ -5,8 +5,8 @@ export const MapsApp = () => {
   return (
     <PlacesProvider>
       <MapProvider>
-         <HomeScreen />
-      <MapProvider/>
+        <HomeScreen />
+      </MapProvider>
     </PlacesProvider>
-  )
+  );
 };
