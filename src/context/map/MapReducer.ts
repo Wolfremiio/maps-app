@@ -1,9 +1,11 @@
-import { createContext } from "react";
+import { MapState } from "./MapProvider";
 import { Map } from "mapbox-gl";
 
-interface MapContextProps {
-  isMapReady: boolean;
-  map?: Map;
-}
+type MapAction = { type: "setMap"; payload: Map };
 
-export const MapContext = createContext({} as MapContextProps);
+export const MapReducer = (state: MapState, action: MapAction): MapState => {
+  switch (action.type) {
+    default:
+      return state;
+  }
+};
