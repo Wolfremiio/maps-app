@@ -10,10 +10,10 @@ export const Mapview = () => {
   useLayoutEffect(() => {
     if (!isLoading) {
       const map = new Map({
-        container: "map", // container ID
+        container: mapDiv.current!, // container ID
         style: "mapbox://styles/mapbox/streets-v12", // style URL
-        center: [-74.5, 40], // starting position [lng, lat]
-        zoom: 9, // starting zoom
+        center: userLocation, // starting position [lng, lat]
+        zoom: 14, // starting zoom
       });
     }
   }, [isLoading]);
